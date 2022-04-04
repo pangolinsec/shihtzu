@@ -100,7 +100,7 @@ My preference is Green, Yellow, and Red respectively
 ## Show membership flows:
 This shows the graph, without orphaned nodes, showing membership paths.
 
-![General View](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage1.png?raw=true)
+![[General View]](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage1.png?raw=true)
 
 
 ## Drill into users and groups:
