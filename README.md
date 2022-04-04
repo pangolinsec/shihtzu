@@ -100,16 +100,18 @@ My preference is Green, Yellow, and Red respectively
 ## Show membership flows:
 This shows the graph, without orphaned nodes, showing membership paths.
 
-![[ReadmeImage1.png]]
+![General View](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage1.png?raw=true)
+
 
 ## Drill into users and groups:
 Here, we see that Operations is a child of Business, and a parent of Finance.
 Although it is not highlighted, we can also see that user01 is a member of finance (the only gotcha here is that, for groups membership flows 'downhill' and that is indicated by the directional arrows, while for users membership flows 'uphill'. This is an artifact of how linking works in Obsidian).
-![[ReadmeImage2.png]]
+![Membership Flows](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage2.png?raw=true)
+
 
 ## Highlight bad accounts:
 Here, we can see that DefaultAccount, Guest, and krbtgt are all disabled or locked out accounts. They are highlighted in that light blue color because we have dragged the light blue group to the top.
 
 Alternatively, we could simply filter out any accounts with that tag with:
 `-tag:#DisabledOrLockedAccounts`
-![[ReadmeImage3.png]]
+![Bad Accounts](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage3.png?raw=true)\
