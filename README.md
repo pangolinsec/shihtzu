@@ -106,7 +106,7 @@ This shows the graph, without orphaned nodes, showing membership paths.
 ## Drill into users and groups:
 Here, we see that Operations is a child of Business, and a parent of Finance.
 Although it is not highlighted, we can also see that user01 is a member of finance (the only gotcha here is that, for groups membership flows 'downhill' and that is indicated by the directional arrows, while for users membership flows 'uphill'. This is an artifact of how linking works in Obsidian).
-![Membership Flows](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage2.png?raw=true)
+![Membership Flows](ReadmeImage2.png)
 
 
 ## Highlight bad accounts:
@@ -114,6 +114,4 @@ Here, we can see that DefaultAccount, Guest, and krbtgt are all disabled or lock
 
 Alternatively, we could simply filter out any accounts with that tag with:
 `-tag:#DisabledOrLockedAccounts`
-![Bad Accounts](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage3.png?raw=true)
-![ReadmeImage1](https://user-images.githubusercontent.com/75450454/161539119-672462a6-ef92-4c54-8d1f-79cea4309ec6.png)
-
+![Bad Accounts](ReadmeImage3.png)
