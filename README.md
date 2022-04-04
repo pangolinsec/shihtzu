@@ -100,7 +100,7 @@ My preference is Green, Yellow, and Red respectively
 ## Show membership flows:
 This shows the graph, without orphaned nodes, showing membership paths.
 
-![[General View]](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage1.png?raw=true)
+![General View](ReadmeImage1.png)
 
 
 ## Drill into users and groups:
@@ -114,4 +114,6 @@ Here, we can see that DefaultAccount, Guest, and krbtgt are all disabled or lock
 
 Alternatively, we could simply filter out any accounts with that tag with:
 `-tag:#DisabledOrLockedAccounts`
-![Bad Accounts](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage3.png?raw=true)\
+![Bad Accounts](https://github.com/pangolinsec/shihtzu/edit/main/Images/ReadmeImage3.png?raw=true)
+![ReadmeImage1](https://user-images.githubusercontent.com/75450454/161539119-672462a6-ef92-4c54-8d1f-79cea4309ec6.png)
+
