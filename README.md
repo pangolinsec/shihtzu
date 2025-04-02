@@ -40,7 +40,7 @@ You'll also need to install Obsidian from https://obsidian.md in order to render
 ### Basic Usage
 
 ```bash
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault
 ```
 
 ### Input Options
@@ -49,10 +49,10 @@ Shihtzu can process a single combined file or separate files for users, groups, 
 
 ```bash
 # Process a single file containing all LDAP output
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault
 
 # Process separate files
-python shihtzu_claude_append.py -U users.txt -G groups.txt -C computers.txt -D /path/to/obsidian/vault
+python shihtzu.py -U users.txt -G groups.txt -C computers.txt -D /path/to/obsidian/vault
 ```
 
 #### Input Requirements
@@ -85,29 +85,29 @@ The program will still generate output files without these additional attributes
 
 ```bash
 # Overwrite existing files
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault --overwrite
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault --overwrite
 
 # Intelligently append new data to existing files
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault --append
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault --append
 ```
 
 ### Configuration Options
 
 ```bash
 # Set custom logon count threshold (default is 100)
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault --logonCount 50
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault --logonCount 50
 
 # Set custom logon date threshold in days (default is 30)
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault --logonDate 60
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault --logonDate 60
 
 # Use a different attribute for filename generation (default is "cn")
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault --filenameSeed sAMAccountName
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault --filenameSeed sAMAccountName
 
 # Set a different delimiter for attribute parsing (default is ": ")
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault --delimiter " = "
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault --delimiter " = "
 
 # Enable debug logging
-python shihtzu_claude_append.py -f ldap_output.txt -D /path/to/obsidian/vault --debug
+python shihtzu.py -f ldap_output.txt -D /path/to/obsidian/vault --debug
 ```
 
 ## Example LDAP Output Format
