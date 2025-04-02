@@ -5,6 +5,10 @@ Shihtzu parses Active Directory (AD) attributes from LDAP search results (dsquer
 Obsidian is a handy markdown editor, but more importantly it contains a graph view, which Shihtzu uses to enable security professionals to map out nested group memberships and relationships between accounts, computers, and groups.
 
 Less richly-featured than Bloodhound, Shihtzu is a lapdog for AD exploitation. Shihtzu is intended to be a light-weight alternative to Bloodhound when stealth requirements prevent you from running full Bloodhound in an enterprise.
+
+## Demo
+Clone this repo and download the most recent release to play around with some sample data, and look at an existing demo vault.
+
 ## Overview
 
 Shihtzu extracts information from LDAP query results (typically in text format), processes them, and generates organized markdown files for easy analysis and reference in Obsidian. This enables security professionals and administrators to better explore, analyze, and document Active Directory environments.
